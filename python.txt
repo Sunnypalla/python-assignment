@@ -1,3 +1,9 @@
-celsius = 50
-fahrenheit = (celsius * 9/5) + 32
-print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+import math, random
+# for alpha nuemeric OTP 
+format= "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+generate_OTP = "" 
+size=8
+length = len(format) 
+for i in range(size) : 
+  generate_OTP+= format[math.floor(random.random() * length)] 
+print(generate_OTP)
