@@ -1,0 +1,9 @@
+import math, random
+# for alpha nuemeric OTP 
+format= "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+generate_OTP = "" 
+size=8
+length = len(format) 
+for i in range(size) : 
+  generate_OTP+= format[math.floor(random.random() * length)] 
+print(generate_OTP)
