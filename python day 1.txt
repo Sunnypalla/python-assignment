@@ -1,0 +1,3 @@
+myList = [34, 11, 21, 7];
+myList.sort(reverse=True);
+print(myList);
